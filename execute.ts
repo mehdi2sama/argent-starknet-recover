@@ -10,7 +10,9 @@ import {
 } from "starknet";
 import { BigNumber } from "ethers";
 import { Account } from "./ui/pickAccounts";
-import { lte } from "semver";
+import { lte } from "semver";ider as OldProvider,
+  Account as OldAccount,
+  ec,
 
 export async function estimateFee(account: Account, call: Call[] | Call) {
   const calls = Array.isArray(call) ? call : [call];
